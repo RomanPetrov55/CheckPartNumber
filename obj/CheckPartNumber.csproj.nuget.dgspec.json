@@ -1,0 +1,61 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\YandexDisk\\Работа\\!Автоматизация\\Tekla\\C#\\CheckPartNumber\\CheckPartNumber.csproj": {}
+  },
+  "projects": {
+    "D:\\YandexDisk\\Работа\\!Автоматизация\\Tekla\\C#\\CheckPartNumber\\CheckPartNumber.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\YandexDisk\\Работа\\!Автоматизация\\Tekla\\C#\\CheckPartNumber\\CheckPartNumber.csproj",
+        "projectName": "CheckPartNumber",
+        "projectPath": "D:\\YandexDisk\\Работа\\!Автоматизация\\Tekla\\C#\\CheckPartNumber\\CheckPartNumber.csproj",
+        "packagesPath": "C:\\Users\\Admin.OMS10093\\.nuget\\packages\\",
+        "outputPath": "D:\\YandexDisk\\Работа\\!Автоматизация\\Tekla\\C#\\CheckPartNumber\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Admin.OMS10093\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "dependencies": {
+            "TeklaOpenAPI": {
+              "target": "Package",
+              "version": "[2020.0.3, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

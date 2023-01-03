@@ -1,0 +1,84 @@
+﻿<Window x:Class="CheckPartNumber.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CheckPartNumber"
+        mc:Ignorable="d"
+        Title="Check Part Number" Height="300" Width="350" ResizeMode="CanMinimize">
+    <Window.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontSize" Value="12" />
+            <Setter Property="Margin" Value="5,0,0,0"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="FontSize" Value="12" />
+            <Setter Property="Height" Value="25" />
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="5,5,5,5"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="5,5,5,5"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="FontWeight" Value="Normal"/>
+            <Setter Property="Margin" Value="5,0,0,0"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="CheckBox">
+            <Setter Property="Margin" Value="5,0,0,0"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Label Content="Запись номеров деталей" HorizontalAlignment="Center" FontWeight="Bold"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <Label Content="Атрибут для записи номера детали" Width="220"/>
+            <TextBox x:Name="AttWrite" Text="my_number1" Width="100"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2" HorizontalAlignment="Center">
+            <Button Content="Записать номера деталей" Height="30" Width="200" Click="Button_Click_WriteNumbers"/>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Separator Height="10" Width="350" />
+        </StackPanel>
+        <StackPanel Grid.Row="4" Orientation="Vertical">
+            
+            <Label Content="Проверка номеров деталей" HorizontalAlignment="Center" FontWeight="Bold"/>
+            
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Атрибут для сравнения номера" Width="220"/>
+                <TextBox x:Name="AttNumCheck" Text="my_number1" Width="100"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Атрибут для записи проверки" Width="220"/>
+                <TextBox x:Name="AttCheck" Text="change_number" Width="100"/>
+            </StackPanel>
+
+            <Button Content="Сравнить номера деталей" Height="30" Width="200" Click="Button_Click_CheckNumbers"/>
+
+        </StackPanel>
+
+    </Grid>
+
+    
+</Window>

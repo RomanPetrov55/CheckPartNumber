@@ -1,0 +1,13 @@
+﻿<Window x:Class="CheckPartNumber.ProgressWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CheckPartNumber"
+        mc:Ignorable="d"
+        Title="Пожалуйста, подождите..." Height="100" ResizeMode="NoResize" Topmost="True" HorizontalAlignment="Center" VerticalAlignment="Center" ScrollViewer.VerticalScrollBarVisibility="Disabled" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <TextBlock x:Name="ProgressText" Text="Text" HorizontalAlignment="Center" Margin="10,10,10,10" VerticalAlignment="Center"></TextBlock>
+    </Grid>
+</Window>
+
